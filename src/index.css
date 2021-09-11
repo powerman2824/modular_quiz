@@ -1,0 +1,38 @@
+body {
+    margin-bottom: 100px;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    font-size: 20px;
+  }
+  var {
+    font-style: normal;
+  }
+  p.wrong {
+    color: white;
+    max-width: 500px;
+    margin-left: 25px;
+    word-break: keep-all;
+    text-shadow: 1px 3px 6px #dbcdcc;
+  }
+  p.right {
+    margin-left: 25px;
+  }
+  p.score {
+    margin-left: 25px;
+    text-decoration: underline;
+  }
+  input.checkBox {
+    margin-left: 45px;
+  }
+  button.subMit{
+    margin-left: 45px;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      margin-bottom: 400px;
+    }
+  }
