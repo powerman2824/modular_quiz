@@ -13,6 +13,20 @@ const getResult = () => {
 const cleanUp = () => {
 //   Reset the score if user submits another quiz
   let resetScore = score = 0;
+//   This clears the score box
+  let scoreBox = document.querySelector("#scoreBox");
+  scoreBox.style.borderStyle = null;
+  scoreBox.style.padding = null;
+  scoreBox.style.backgroundColor = null;
+//   This clears the right answers boxes
+  let rightBoxQ1 = document.querySelector("#right1");
+  rightBoxQ1.style.borderStyle = null;
+  rightBoxQ1.style.padding = null;
+  rightBoxQ1.style.backgroundColor = null;
+  let rightBoxQ2 = document.querySelector("#right2");
+  rightBoxQ2.style.borderStyle = null;
+  rightBoxQ2.style.padding = null;
+  rightBoxQ2.style.backgroundColor = null;
 //   This clears the wrong answers boxes
   let wrongBoxQ1 = document.querySelector("#wrong1");
   wrongBoxQ1.style.borderStyle = null;
@@ -37,6 +51,10 @@ const q1RightAns = () => {
 //     If true statement gets printed to doc and wrong answer turns blank
     let q1Correct = "You are correct!";
     document.getElementById("q1RightAns").innerHTML = q1Correct;
+    let rightBox = document.querySelector("#right1");
+    rightBox.style.borderStyle = "outset";
+    rightBox.style.padding = "10px 10px 10px 10px";
+    rightBox.style.backgroundColor = "green";
     document.getElementById("q1WrongAns").innerHTML = "";
 //     If true score is increased by 1
     let q1Score = ++score;
@@ -71,6 +89,10 @@ const q2RightAns = () => {
 //     If true statement gets printed to doc and wrong answer turns blank
     let q2Correct = "You are correct!";
     document.getElementById("q2RightAns").innerHTML = q2Correct;
+    let rightBox = document.querySelector("#right2");
+    rightBox.style.borderStyle = "outset";
+    rightBox.style.padding = "10px 10px 10px 10px";
+    rightBox.style.backgroundColor = "green";
     document.getElementById("q2WrongAns").innerHTML = "";
 //     If true score is increased by 1
     let q2Score = ++score;
@@ -97,9 +119,17 @@ const getScore = () => {
   if (totalScore === 100) {
     let topScore = `Great Job you scored a ${totalScore}%`
     document.getElementById("theScore").innerHTML = topScore;
+    let scoreBox = document.querySelector("#scoreBox");
+    scoreBox.style.borderStyle = "outset";
+    scoreBox.style.padding = "10px 10px 10px 10px";
+    scoreBox.style.backgroundColor = "green";
   } else {
     let lowScore = `Keep studying & review the solutions. Your score: ${totalScore}%`
     document.getElementById("theScore").innerHTML = lowScore;
+    let scoreBox = document.querySelector("#scoreBox");
+    scoreBox.style.borderStyle = "inset";
+    scoreBox.style.padding = "10px 10px 10px 10px";
+    scoreBox.style.backgroundColor = "red";
   }
 };
 
@@ -112,6 +142,20 @@ const reset = () => {
 //   This resets the value of score and clears it from the doc
   document.getElementById("theScore").innerHTML = "";
   let resetScore = score = 0;
+//   This clears the score box
+  let scoreBox = document.querySelector("#scoreBox");
+  scoreBox.style.borderStyle = null;
+  scoreBox.style.padding = null;
+  scoreBox.style.backgroundColor = null;
+//   This clears the right answers boxes
+  let rightBoxQ1 = document.querySelector("#right1");
+  rightBoxQ1.style.borderStyle = null;
+  rightBoxQ1.style.padding = null;
+  rightBoxQ1.style.backgroundColor = null;
+  let rightBoxQ2 = document.querySelector("#right2");
+  rightBoxQ2.style.borderStyle = null;
+  rightBoxQ2.style.padding = null;
+  rightBoxQ2.style.backgroundColor = null;
 //   This clears the wrong answers boxes
   let wrongBoxQ1 = document.querySelector("#wrong1");
   wrongBoxQ1.style.borderStyle = null;

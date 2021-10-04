@@ -1,38 +1,84 @@
 body {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
+  background-color: blue;
+}
+div.queBox {
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid red;
+  max-width: 600px;
+  padding: 10px;
+  box-shadow: 5px 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow:5px 5px 10px black;
+  text-decoration-line: underline;
+}
+.question {
+}
+p {
+  font-size: 20px;
+}
+var {
+  font-style: normal;
+}
+p.wrong {
+  color: white;
+  max-width: 500px;
+  margin-left: 25px;
+  word-break: keep-all;
+  text-shadow: 1px 3px 6px #dbcdcc;
+}
+p.right {
+  color: white;
+  max-width: 500px;
+  margin-left: 25px;
+  word-break: keep-all;
+  text-shadow: 1px 3px 6px #dbcdcc;
+}
+p.score {
+  color: white;
+  max-width: 500px;
+  margin-left: 25px;
+  word-break: keep-all;
+  text-shadow: 1px 3px 6px #dbcdcc;
+}
+input.checkBox {
+  margin-left: 45px;
+}
+button.subMit{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+button.reset{
+  font-size: 25px;
+  border-radius: 15px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    margin-bottom: 400px;
   }
-  h1 {
-    text-align: center;
-  }
-  p {
-    font-size: 20px;
-  }
-  var {
-    font-style: normal;
-  }
-  p.wrong {
-    color: white;
-    max-width: 500px;
-    margin-left: 25px;
-    word-break: keep-all;
-    text-shadow: 1px 3px 6px #dbcdcc;
-  }
-  p.right {
-    margin-left: 25px;
-  }
-  p.score {
-    margin-left: 25px;
-    text-decoration: underline;
-  }
-  input.checkBox {
-    margin-left: 45px;
+  div.queBox {
+  border-radius: 15px;
+  border: 2px solid red;
+  max-width: 1500px;
+  padding: 10px;
+  box-shadow: 5px 10px;
+  margin-left: 5%;
+  margin-right: 5%;  
   }
   button.subMit{
-    margin-left: 45px;
+  font-size: 20px;
+  border-radius: 0px;
   }
-  @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-      margin-bottom: 400px;
-    }
+  button.reset{
+  font-size: 20px;
+  border-radius: 0px;
   }
+}

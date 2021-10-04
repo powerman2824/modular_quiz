@@ -1,48 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Modular Quiz</title>
-</head>
-<body>
-    <div>
-        <h1>Questionnaire</h1>
-      </div>
-      <div>
-        <p class="question">1. Which of the following protocols are examples of TCP/IP transport layer protocols? (Choose two answers.)</p>
-        <p><input class="checkBox" type="checkbox" id="q1-a">a. Ethernet</p>
-        <p><input class="checkBox" type="checkbox" id="q1-b">b. HTTP</p>
-        <p><input class="checkBox" type="checkbox" id="q1-c">c. IP</p>
-        <p><input class="checkBox" type="checkbox" id="q1-d">d. UDP</p>
-        <p><input class="checkBox" type="checkbox" id="q1-e">e. SMTP</p>
-        <p><input class="checkBox" type="checkbox" id="q1-f">f. TCP</p>
-      </div>
-      <div>
-        <p class="right"><var id="q1RightAns"></var></p>
-        <p class="wrong" id="wrong1"><var id="q1WrongAns"></var></p>
-      </div>
-      <div>
-        <p class="question">2. Which of the following protocols are examples of TCP/IP data-link layer protocols? (Choose two answers.)</p>
-        <p><input class="checkBox" type="checkbox" id="q2-a">a. Ethernet</p>
-        <p><input class="checkBox" type="checkbox" id="q2-b">b. HTTP</p>
-        <p><input class="checkBox" type="checkbox" id="q2-c">c. IP</p>
-        <p><input class="checkBox" type="checkbox" id="q2-d">d. UDP</p>
-        <p><input class="checkBox" type="checkbox" id="q2-e">e. SMTP</p>
-        <p><input class="checkBox" type="checkbox" id="q2-f">f. TCP</p>
-        <p><input class="checkBox" type="checkbox" id="q2-g">g. PPP</p>
-      </div>
-      <div>
-        <p class="right"><var id="q2RightAns"></var></p>
-        <p class="wrong" id="wrong2"><var id="q2WrongAns"></var></p>
-      </div>
-      <div>
-        <button class="subMit" type="button" onclick="getResult()">Submit</button>
-        <button class="reset" type="button" onclick="reset()">Reset</button>
-        <p class="score"><var id="theScore"></var></p>
-      </div>
-      <script src="./index.js"></script>
-</body>
-</html>
+<div>
+  <h1>Questionnaire</h1>
+</div>
+<div class="queBox">
+  <p class="question">1. Which of the following protocols are examples of TCP/IP transport layer protocols? (Choose two answers.)</p>
+  <p><input class="checkBox" type="checkbox" id="q1-a">a. Ethernet</p>
+  <p><input class="checkBox" type="checkbox" id="q1-b">b. HTTP</p>
+  <p><input class="checkBox" type="checkbox" id="q1-c">c. IP</p>
+  <p><input class="checkBox" type="checkbox" id="q1-d">d. UDP</p>
+  <p><input class="checkBox" type="checkbox" id="q1-e">e. SMTP</p>
+  <p><input class="checkBox" type="checkbox" id="q1-f">f. TCP</p>
+  <p class="right" id="right1"><var id="q1RightAns"></var></p>
+  <p class="wrong" id="wrong1"><var id="q1WrongAns"></var></p>
+</div><br>
+<div class="queBox">
+  <p class="question">2. Which of the following protocols are examples of TCP/IP data-link layer protocols? (Choose two answers.)</p>
+  <p><input class="checkBox" type="checkbox" id="q2-a">a. Ethernet</p>
+  <p><input class="checkBox" type="checkbox" id="q2-b">b. HTTP</p>
+  <p><input class="checkBox" type="checkbox" id="q2-c">c. IP</p>
+  <p><input class="checkBox" type="checkbox" id="q2-d">d. UDP</p>
+  <p><input class="checkBox" type="checkbox" id="q2-e">e. SMTP</p>
+  <p><input class="checkBox" type="checkbox" id="q2-f">f. TCP</p>
+  <p><input class="checkBox" type="checkbox" id="q2-g">g. PPP</p>
+  <p class="right" id="right2"><var id="q2RightAns"></var></p>
+  <p class="wrong" id="wrong2"><var id="q2WrongAns"></var></p>
+</div><br>
+<div class="queBox">
+  <button class="subMit" type="button" onclick="getResult()">Submit</button>
+  <button class="reset" type="button" onclick="reset()">Reset</button>
+  <p class="score" id="scoreBox"><var id="theScore"></var></p>
+</div>
